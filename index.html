@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Page</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav-bar">
+        <div class="nav-list">
+          <i class="ri-bootstrap-fill"></i>
+          <a
+            href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"
+            target="_blank"
+            ><li>Docs</li></a
+          >
+          <a href="https://getbootstrap.com/docs/5.3/examples/" target="_blank"
+            ><li>Examples</li></a
+          >
+          <a href="https://icons.getbootstrap.com/" target="_blank"
+            ><li>Icons</li></a
+          >
+          <a href="https://blog.getbootstrap.com/" target="_blank"
+            ><li>Blog</li></a
+          >
+          <div class="inp">
+            <i class="ri-search-2-line"></i>
+            <input class="input" type="text" placeholder="Search" />
+            <p>Ctrl K</p>
+          </div>
+          <button id="login-btn">Login</button>
+        </div>
+      </div>
+      <div class="goto">
+        Get Security Updates for Bootstrap 3 & 4
+        <i class="ri-arrow-right-line"></i>
+      </div>
+      <div class="img">
+        <img src="logo.png" alt="" />
+      </div>
+      <div class="content">
+        <div class="main">Build fast, responsive sites with Bootstrap</div>
+        <div class="sub">
+          Powerful, extensible, and feature-packed frontend toolkit. Build and
+          customize with Sass, utilize prebuilt grid system and components, and
+          bring projects to life with powerful JavaScript plugins.
+        </div>
+        <div class="btn">
+          <div class="btn1">
+            $
+            <p id="text-clip">npm i bootstrap@5.3.3</p>
+            <i class="ri-clipboard-line clip" onclick="copyToClipboard()"></i>
+          </div>
+          <div class="btn2">
+            <i class="ri-book-open-fill"></i>
+            <p>Read Docs</p>
+          </div>
+        </div>
+        <div class="topic">
+          <p>Currently <span>v5.3.3</span></p>
+          &#183;
+          <p id="download">Download</p>
+          &#183;
+          <p id="release">All release</p>
+        </div>
+      </div>
+      <div class="popup" id="popup">
+        <i class="ri-checkbox-circle-fill"></i>
+        <p>Login Successfully</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

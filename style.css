@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+body {
+  background: rgba(214, 51, 132, 0.5);
+  background-image: linear-gradient(
+      180deg,
+      rgba(121, 17, 201, 0.01),
+      rgba(33, 37, 41, 1) 85%
+    ),
+    radial-gradient(
+      ellipse at top left,
+      rgba(161, 13, 253, 0.5),
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at top right,
+      rgba(255, 228, 132, 0.5),
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at center right,
+      rgba(112.520718, 44.062154, 249.437846, 0.5),
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at center left,
+      rgba(214, 51, 132, 0.5),
+      transparent 50%
+    );
+  min-height: 100vh;
+}
+
+.container .nav-bar {
+  background-color: #6610f2;
+  box-shadow: 0 5px 20px rgba(33, 33, 33, 0.75);
+}
+
+.container .nav-bar .nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+  font-size: 1rem;
+  padding: 0.7rem 0.6rem;
+  color: #f0e8ff;
+}
+
+.container .nav-bar .nav-list a {
+  text-decoration: none;
+  color: #f0e8ff;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.container .nav-bar .nav-list > li:hover {
+  color: #fff;
+}
+
+.container .nav-bar .nav-list > i {
+  font-size: 2.5rem;
+  color: #ffff;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+
+.container .nav-bar .nav-list > i:hover {
+  transform: rotate(-6deg) scale(1.1);
+}
+
+.container .nav-bar .nav-list .inp {
+  display: flex;
+  align-items: center;
+  border: 1px solid #f0e8ff;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.5rem;
+  color: #f0e8ff;
+}
+
+.container .nav-bar .nav-list .inp > i {
+  font-size: 1.2rem;
+}
+
+.container .nav-bar .nav-list > .inp input {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0.6rem 1rem 0.6rem 0.2rem;
+  color: #f0e8ff;
+}
+
+.container .nav-bar .nav-list .inp:hover {
+  outline: 4px solid #bd9bfd;
+}
+
+.container .nav-bar .nav-list .inp input::placeholder {
+  color: #f0e8ff;
+  font-weight: 600;
+}
+
+.container .nav-bar .nav-list .inp p {
+  background: #4a1da4;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.3rem;
+  cursor: default;
+}
+
+.container .nav-bar .nav-list button {
+  background: #4a1da4;
+  font-size: 1.3rem;
+  color: #f0e8ff;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.4rem;
+  border: 1px solid #f0e8ff;
+  cursor: pointer;
+}
+
+.container .nav-bar .nav-list button:hover {
+  outline: 4px solid #b38dff;
+}
+
+.container .goto {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  padding: 0.4rem 0.8rem;
+  border-radius: 50px;
+  background: #ffe484;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.55);
+}
+
+.container .img {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.container .img > img {
+  width: 200px;
+}
+
+.container .content > div {
+  color: #f0e8ff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.container .content .main {
+  font-size: 3.5rem;
+  font-weight: 700;
+  width: 60%;
+  margin: 1.5rem auto;
+}
+
+.container .content .sub {
+  font-size: 1.5rem;
+  font-weight: 400;
+  width: 72%;
+  margin: 1.5rem auto;
+}
+
+.container .btn {
+  align-items: center;
+  gap: 10px;
+  margin: 1.5rem 0;
+}
+
+.container .btn > div {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  color: #f0e8ff;
+  padding: 1rem 0.7rem;
+  border-radius: 10px;
+  gap: 10px;
+}
+
+.container .btn .btn1 {
+  background: #303338;
+}
+
+.container .btn .btn2 {
+  background: #5b24c7;
+  cursor: pointer;
+}
+
+.container .btn .btn2:hover {
+  background: #4a1da4;
+}
+
+.container .topic {
+  gap: 10px;
+  color: #5d5d5d;
+  margin: 1.5rem 0;
+}
+.container .topic p > span {
+  font-weight: 600;
+}
+.container .topic :nth-child(2) {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.container .topic :nth-child(3) {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.container .popup {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.2rem;
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.7s ease-in-out;
+}
+
+.container .popup > i {
+  color: #24c742;
+}
+
+@media screen and (max-width: 1280px) {
+  .container .nav-bar .nav-list > .inp {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1085px) {
+  .container .content .main {
+    font-size: 2.5rem;
+  }
+  .container .content .sub {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 908px) {
+  .container .nav-bar .nav-list :where(button) {
+    display: none;
+  }
+  .container .content .main {
+    font-size: 2rem;
+  }
+  .container .content .sub {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 712px) {
+  .container .nav-bar .nav-list {
+    flex-direction: column;
+    gap: 0;
+  }
+  .container .nav-bar .nav-list .inp {
+    display: flex;
+  }
+  .container .nav-bar .nav-list {
+    padding: 0.5rem;
+  }
+  .container .nav-bar .nav-list :where(li) {
+    display: none;
+  }
+  .container .nav-bar .nav-list > i {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container .goto {
+    font-size: 0.8rem;
+  }
+  .container .img > img {
+    width: 150px;
+  }
+  .container .content .main {
+    width: 100%;
+    font-size: 2rem;
+  }
+  .container .content .sub {
+    width: 90%;
+    font-size: 1rem;
+  }
+  .container .btn > div {
+    font-size: 0.8rem;
+  }
+  .container .topic {
+    font-size: 0.8rem;
+  }
+  .container .btn {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .container .btn > div {
+    width: 70%;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container .img > img {
+    width: 100px;
+  }
+  .container .btn > div {
+    font-size: 0.7rem;
+  }
+  .container .topic {
+    font-size: 0.7rem;
+  }
+  .container .nav-bar .nav-list > i {
+    display: none;
+  }
+}
